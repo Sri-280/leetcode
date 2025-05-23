@@ -35,7 +35,7 @@ public:
             for(auto n:res){
                 totals+=n;
             }
-            double r=static_cast<double>(totals)/res.size();
+            double r=totals/(double)res.size();
             result.push_back(r);
         }
         return result;
