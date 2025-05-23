@@ -6,14 +6,13 @@ public:
         for (auto i : apple) {
             tapple += i;
         }
-        sort(capacity.begin(), capacity.end(),
-             [](int a, int b) { return a > b; });
+        sort(capacity.begin(), capacity.end(), [](int a, int b) { return a > b; });
         int box = 0;
             for (auto i : capacity) {
                 if (box < tapple) {
                     box += i;
                     count++;
-                }
+                }else break;
             }
         
             return count;
